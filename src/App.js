@@ -1,14 +1,13 @@
 import './App.css';
 import BotCollection from './BotCollection'; 
-import YourBotArmy from './YourBotArmy';
+import MyBotArmy from './MyBotArmy';
 
 function App() {
   
-
   return (
     <div >
       <BotCollection />
-      <YourBotArmy />
+      <MyBotArmy />
       
     </div>
   );

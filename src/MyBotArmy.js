@@ -1,8 +1,9 @@
 
-const YourBotArmy = ({name,health,damage,armor,bot_class,catchphrase,created_at,updated_at}) => {
+const MyBotArmy = ({id,name,health,damage,armor,bot_class,catchphrase,created_at,updated_at,onDelete}) => {
+   
     return (
         <>
-            <div>
+            <div key={id}>
                 Name : {name}
                 <br></br>
                 Health :{health}
@@ -19,9 +20,9 @@ const YourBotArmy = ({name,health,damage,armor,bot_class,catchphrase,created_at,
                 <br></br> 
                 Update :{updated_at}
                 <br></br>
-                <br></br>
+                <button onClick={() => onDelete(id)} style={{color:'red'}}>X</button>
             </div>
         </>
     )
 };
-export default YourBotArmy;
+export default MyBotArmy;
