@@ -24,7 +24,7 @@ const MyBotArmy = ({
       <p>Catchphrase: {catchphrase}</p>
       <p>Created: {created_at}</p>
       <p>Updated: {updated_at}</p>
-      <button onClick={onDelete} style={{color:'red'}}>X</button>
+      <button onClick={() => onDelete(id)} style={{color:'red'}}>X</button>
       <button onClick={onEnlist}>Enlist</button>
     </div>
   );
