@@ -1,21 +1,35 @@
 import React from 'react';
 
-const EnlistedBots = ({ id, name, health, damage, armor, bot_class, catchphrase, created_at, updated_at,avatar_url}) => {
+const EnlistedBot = ({
+  id,
+  name,
+  health,
+  damage,
+  armor,
+  bot_class,
+  catchphrase,
+  created_at,
+  updated_at,
+  image,
+  onRelease
+}) => {
   return (
-    <div key={id}>
-      <img src={avatar_url} />
-      <div key={id}>
-          name={name}
-          health={health}
-          damage={damage}
-          armor={armor}
-          bot_class={bot_class}
-          catchphrase={catchphrase}
-          created_at={created_at}
-          updated_at={updated_at}
+    <div>
+      <img src={image} />
+      <div>
+        <h3>Enlisted Bot:</h3>
+        <p>Name: {name}</p>
+        <p>Health: {health}</p>
+        <p>Damage: {damage}</p>
+        <p>Armor: {armor}</p>
+        <p>Class: {bot_class}</p>
+        <p>Catchphrase: {catchphrase}</p>
+        <p>Created: {created_at}</p>
+        <p>Updated: {updated_at}</p>
+        <button onClick={onRelease}>Release</button>
       </div>
     </div>
   );
 };
 
-export default EnlistedBots;
+export default EnlistedBot;
