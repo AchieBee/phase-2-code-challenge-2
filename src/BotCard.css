@@ -1,0 +1,27 @@
+
+.bot-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bot-image {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .bot-details h3 {
+    margin-top: 0;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  
